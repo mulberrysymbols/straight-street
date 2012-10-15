@@ -1,0 +1,31 @@
+Options -Indexes 
+
+RewriteEngine On
+# api
+RewriteBase /
+#RewriteRule ^api$ api/ [R]
+#RewriteRule ^api/(.*)$ _api1/$1
+
+# make www.straight-stree.com go to straight-stree.com
+RewriteCond %{HTTP_HOST} ^www\.straight-street\.com$ [NC]
+RewriteRule ^(.*)$ http://straight-street.com/$1 [R=301,L]
+
+#AllowOverride Options
+php_flag magic_quotes_gpc off
+php_flag register_globals off
+php_flag display_errors on
+php_flag display_startup_errors on
+#php_value error_reporting 6143
+php_value error_reporting 8191
+php_value date.timezone Europe/London
+
+#utf-8 support
+# see http://www.nicknettleton.com/zine/php/php-utf-8-cheatsheet
+php_value mbstring.language				Neutral
+php_value mbstring.internal_encoding		UTF-8
+php_value mbstring.encoding_translation 	On
+php_value mbstring.http_input			auto
+php_value mbstring.http_output			UTF-8
+php_value mbstring.detect_order			auto
+php_value mbstring.substitute_character  	none
+php_value default_charset				UTF-8

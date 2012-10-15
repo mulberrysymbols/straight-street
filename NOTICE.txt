@@ -1,0 +1,32 @@
+Straight-street website
+Copyright 2008-2012 Paxtoncrafts Charitable Trust
+
+ZIP file handling is provide by the pclzip package written by Vincent Blavet
+and licensed under the GNU LGPL 2.1. The original code is available at 
+  http://www.phpconcept.net
+ 
+Rectangle drawing is provided by Nifty Corners written by 
+and free for commercial or private use. Code is available at
+  http://www.html.it/articoli/nifty/index.html
+
+PDF file creation uses FDF writen by Olivier ? and made available under a 
+licence with no restictions. Original available at
+  http://www.fpdf.org/ 
+
+WYSIWYG editing is provided using ckeditor written by CKSource
+and licensed under GPL 2/LGPL 2.1 /MPL 1.1 and a commercial licence.
+Original code is available at
+  http://ckeditor.com/download
+ 
+Drag and drop functionaility is provided using drag-drop-custom.js written
+by Alf Magne Kallelandand licensed and licensed using the GNU LGPL. Original
+code is available from 
+  http://www.dhtmlgoodies.com
+
+Busy indication in reports is provided by cvi_busy_lib.js by Netzgestade and
+licensed under a non commercial software license agreement that forbids redistribution.
+http://www.netzgesta.de/cvi/LICENSE.txt. Original code at 
+  http://www.netzgesta.de/busy/
+
+JSON processing is provided by json2.js written by Douglas Crockford and put in the
+public domain.

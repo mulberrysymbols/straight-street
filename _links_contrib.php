@@ -1,0 +1,12 @@
+<?
+if (isUserAtLeastContributor()) { 
+?>
+<!--
+<br>
+
+Contributor [ | ]
+-->
+<?
+}
+?>
+
