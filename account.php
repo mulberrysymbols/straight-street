@@ -98,7 +98,8 @@ EOT;
 					$msg = <<<EOT
 <p>Welcome. You are now loggined in and may <a href="index.php">use this site</a>.</p>
 EOT;
-					addForumUser($row['username'], $_POST['password'], $row['email'], $_SERVER['REMOTE_ADDR']);
+					// Automatically add an user in the MyBB forum
+					//addForumUser($row['username'], $_POST['password'], $row['email'], $_SERVER['REMOTE_ADDR']);
 
 				}
 /*				else {
