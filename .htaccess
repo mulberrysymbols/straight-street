@@ -6,9 +6,9 @@ RewriteBase /
 #RewriteRule ^api$ api/ [R]
 #RewriteRule ^api/(.*)$ _api1/$1
 
-# make www.straight-stree.com go to straight-stree.com
-RewriteCond %{HTTP_HOST} ^www\.straight-street\.com$ [NC]
-RewriteRule ^(.*)$ http://straight-street.com/$1 [R=301,L]
+# make www.somehting.com go to something.com
+RewriteCond %{HTTP_HOST} ^www\.something\.com$ [NC]
+RewriteRule ^(.*)$ http://something.com/$1 [R=301,L]
 
 #AllowOverride Options
 php_flag magic_quotes_gpc off
