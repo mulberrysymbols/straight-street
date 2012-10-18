@@ -116,7 +116,7 @@ class PDFSymbolList extends ReporterABC
  //       $pdf->SetFont('Arial','',CAT_FONT_SIZE); // for Ln()
         $pdf->SetTitle('Mulberry symbol set');
         $pdf->SetSubject('All symbols organised by category');
-        $pdf->SetCreator('Straight-street.com');
+        $pdf->SetCreator('Somehting.com');
         $pdf->SetKeyWords('symbols accessibility aac communication');
 
         $pdf->AddPage();

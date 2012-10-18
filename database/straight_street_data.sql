@@ -84,7 +84,7 @@ INSERT INTO `t_bundle_version` (`lang_id`, `version`) VALUES
 -- 
 
 INSERT INTO `t_lic` (`id`, `long_caption`, `brief`, `caption`) VALUES 
-(6, 'Creative Commons BY-SA (Attribution-Share Alike 3.0 unported).', '''License Overview: you are free to share, copy, distribute and transmit the symbols. You can also adapt and amend them. However, you must attribute the symbols and any you make to the author, Paxtoncrafts Charitable Trust (without implying we endorse you or your use of the work). In addition, if you alter, transform, or build upon these symbols you may distribute the resulting work only under the same license. Consequently, the same license follows these symbols around forever. Our intention is that these symbols remain free of cost, but please click on the image to view the full license, or contact Straight Street if you have any questions about ways in which these might be used, or waiving the license.<br><br> For more details please see the <a href=''http://creativecommons.org/licenses/by-sa/2.0/uk''>Attribution-Share Alike page</a> on the <a href=''http://creativecommons.org/''>Creative Commons</a> web site.''', 'Creative Commons BY-SA');
+(6, 'Creative Commons BY-SA (Attribution-Share Alike 3.0 unported).', '''License Overview: you are free to share, copy, distribute and transmit the symbols. You can also adapt and amend them. However, you must attribute the symbols and any you make to the author, Paxtoncrafts Charitable Trust (without implying we endorse you or your use of the work). In addition, if you alter, transform, or build upon these symbols you may distribute the resulting work only under the same license. Consequently, the same license follows these symbols around forever. Our intention is that these symbols remain free of cost, but please click on the image to view the full license, or contact Somehting if you have any questions about ways in which these might be used, or waiving the license.<br><br> For more details please see the <a href=''http://creativecommons.org/licenses/by-sa/2.0/uk''>Attribution-Share Alike page</a> on the <a href=''http://creativecommons.org/''>Creative Commons</a> web site.''', 'Creative Commons BY-SA');
 
 -- 
 -- Dumping data for table `t_media`
@@ -23897,7 +23897,7 @@ INSERT INTO `t_tag` (`id`, `tag`) VALUES
 -- 
 
 INSERT INTO `t_user` (`id`, `authcode`, `username`, `pass`, `datereg`, `auth`, `email`, `fname`, `sname`, `dob`, `role`, `last_access`, `language_id`, `cancontact`) VALUES 
-(1, '', 'Admin', '', '2008-01-30 00:00:00', 9, 'support@straight-street.com', 'Garry', 'Paxton', '0000-00-00 00:00:00', 'Website Administrator', '2012-10-10 10:41:59', 'EN', 0x31),
+(1, '', 'Admin', '', '2008-01-30 00:00:00', 9, 'support@somehting.com', 'Garry', 'Paxton', '0000-00-00 00:00:00', 'Website Administrator', '2012-10-10 10:41:59', 'EN', 0x31),
 
 -- 
 -- Dumping data for table `t_user_agr_lic`

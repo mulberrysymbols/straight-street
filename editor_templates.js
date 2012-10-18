@@ -2,7 +2,7 @@
 CKEDITOR.addTemplates( 'default',
 {
 	// The name of sub folder which hold the shortcut preview images of the templates.
-	imagesPath : 'http://straight-street.com/img/',
+	imagesPath : 'http://something.com/img/',
 
 	// The templates definitions.
 	templates :

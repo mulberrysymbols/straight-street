@@ -1,5 +1,4 @@
-Straight-street website
-Copyright 2008-2012 Paxtoncrafts Charitable Trust
+Copyright 2008-2012 Garry Paxton
 
 ZIP file handling is provide by the pclzip package written by Vincent Blavet
 and licensed under the GNU LGPL 2.1. The original code is available at 

@@ -1,10 +1,10 @@
 /*
   ApiTest by Steve Lee
   Version: 0.1
-  Homepage: http://straight-street.com/apitest.html
+  Homepage: http://somehting.com/apitest.html
   Copyright (c) 2009, Steve Lee, Full Measure
   Code licensed under the BSD License:
-  http://straight-street.com/licence.txt
+  http://somehting.com/licence.txt
 */
 
 if (!Array.prototype.forEach)
@@ -139,7 +139,7 @@ function showSymbols(obj)
         {
             var i = document.createElement('object');
             i.type='image/svg+xml';
-            i.data='http://straight-street.com/img/apitest.svg';
+            i.data='http://somehting.com/img/apitest.svg';
             i.title = name;
         }
         catch (e)
@@ -154,7 +154,7 @@ function showSymbols(obj)
         try
         {
             var i = document.createElement('img');
-            i.src='http://straight-street.com/img/apitest.wmf';
+            i.src='http://somehting.com/img/apitest.wmf';
             i.width=0;
             i.height=0;
             document.appendChild(i);
@@ -290,7 +290,7 @@ function getTag( tag, page )
     theForm.find.value = tag;
 	    
     var url = '/api/tag/EN/'+tag+'?page='+page+'&appid=SSApiTest';
-    requestJSON('http://straight-street.com'+url+'&callback=showTag');
+    requestJSON('http://somehting.com'+url+'&callback=showTag');
 }
 
 function getSymbols( find, page )
@@ -298,7 +298,7 @@ function getSymbols( find, page )
     page = page || 0;
     var theForm = document.getElementById('the_form');
     theForm.find.value = find;
-    var url = 'http://straight-street.com/api/symbols/EN/'+find+'?page='+page+'&appid=SSApiTest';
+    var url = 'http://somehting.com/api/symbols/EN/'+find+'?page='+page+'&appid=SSApiTest';
     requestJSON(url+'&callback=showSymbols');
 /*     var xhrObj = new XMLHttpRequest();
         function xhrHandler()
