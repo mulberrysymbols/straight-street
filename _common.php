@@ -408,8 +408,8 @@ $domain = "";
 $addr_bare = "support@$domain";
 $addr = '"Support Team" <support@something.com>';
 
+// FIXME = contact details
 $contact_addr = 'Address';
-
 $contact_tel = 'Tel';
 
 function htmlenc($str)
