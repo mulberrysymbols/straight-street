@@ -14,6 +14,8 @@ function random_str($length="8")
 	return $str;
 }
 
+// Added a myBB user directly into it's DB
+// NB this code is specific to a particular version of myBB
 function addForumUser($uname, $password, $email, $ip)
 {
 	if (!($link = mysql_connect('localhost',DB_USER,DB_PW) ))
