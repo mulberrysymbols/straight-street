@@ -11,7 +11,7 @@ function getGroupRecipients($group)
 {
 	if ($group == '998')
 	{
-		return array('support@straight-street.com');
+		return array('support@something.com>');
 	}
 	else if ($group == '999')
 	{
@@ -58,8 +58,8 @@ if (mb_strlen(trim($input_g))>0 && (mb_strlen(trim($input_b)))>0)
     }
     else
     {
-        $subject = "[$groupName] Straight-Street Group Email";
-        $name = "Straight-Street";
+        $subject = "[$groupName] Support Group Email";
+        $name = "Support";
         $body = $input_b;
 
         if ($input_h == 'true')

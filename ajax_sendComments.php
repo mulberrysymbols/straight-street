@@ -10,7 +10,7 @@ $input_a = $_GET["allow"];
 
 if (trim($input_n) && trim($input_e) && trim($input_c) && mb_strlen(trim($input_a))>0) {
 
-	$recipient = "support@straight-street.com,steve@fullmeasure.co.uk";
+	$recipient = "support@something.com>";
 
 	$sender = $input_e;
 	$name = $input_n;
@@ -36,7 +36,7 @@ if (trim($input_n) && trim($input_e) && trim($input_c) && mb_strlen(trim($input_
 
 	//exit( "$recipient\n$emailbody\n\nFrom: $name \nSender: $sender");	
 
-	$subject = "Straight-Street contact: ".htmlenc($input_s);
+	$subject = "Support contact: ".htmlenc($input_s);
 	$headers = "MIME-Version: 1.0 \n"
 		   	."Content-type: text/plain; charset=UTF-8 \n"
 		   	."From: $name <$sender> \n"

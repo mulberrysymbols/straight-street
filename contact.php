@@ -19,7 +19,7 @@ Contact
     <?= $contact_tel ?>
 	</p>
     <p>
-	[ <a href="mailto:support@straight-street.com?subject=Straight%20Street%20email%20contact">support@straight-street.com</a> ]
+	[ <a href="mailto:support@something.com>?subject=Support%20email%20contact">support@something.com></a> ]
     </p>
 
 </div></div>

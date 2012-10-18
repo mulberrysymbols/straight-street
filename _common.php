@@ -403,18 +403,14 @@ function checkExists($table, $field, $compared)
 }	
 
 
-$domain = "straight-street.com";
+// FIXME - address and domain also explicit in ajax_sendGroupEmail.php, ajax_sendComments.php, contact.php and db_registerUserendEmial.php
+$domain = "";
 $addr_bare = "support@$domain";
-//$addr = '"Straight Street Team" <'.$addr_bare.'>'; // this is not working < gets lost. WHY?
-$addr = '"Straight Street Team" <support@straight-street.com>';
+$addr = '"Support Team" <support@something.com>';
 
-$contact_addr = 'Straight Street Ltd,
-Pippins, The Orchard,
-Felsted,
-Essex
-CM6 3DE';
+$contact_addr = 'Address';
 
-$contact_tel = '01371 821501';
+$contact_tel = 'Tel';
 
 function htmlenc($str)
 {

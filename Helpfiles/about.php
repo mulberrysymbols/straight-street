@@ -43,13 +43,6 @@ While all our computer programs are free, we found we often had to buy a symbol 
 
 <p>If you wish to make a contribution to our efforts, please <a href="/contact.php?subject=Donation">contact us</a> the Trustees at</p>
 <p>
-Garry Paxton<br/>
-Paxtoncrafts Charitable Trust<br/>
-Pippins, The Orchard,<br/>
-Felsted<br/>
-Essex,<br/>
-CM6 3DE<br/>
-</pre>
 </p>
 
 <a href='../help.php'>Back to Help page</a>

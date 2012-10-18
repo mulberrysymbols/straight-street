@@ -68,19 +68,19 @@ if (trim($input_email)) {
 
 		//---- send email
 		$to = "$input_email, fred@fullmeasure.co.uk";
-		$subject = "Straight-Street Activation Code";
+		$subject = "Website Activation Code";
 		$body = "";
 		$body .= "Dear User,\n\n";
-		$body .= "Your email address has been used to activate an Account with Straight-Street.com.\n";
+		$body .= "Your email address has been used to activate an Account with something.com.\n";
 		$body .= "If you did not cause this email to be sent, please ignore this email.\n\n";
 		$body .= "Email Address : $to\n";
 		$body .= "Activation Code : $auth_code\n\n";
 		$body .= "Alternatively, you can click on the following link to activate your account :\n";
-		$body .= "http://straight-street.com/register.php?email=$to&code=$auth_code \n\n";
+		$body .= "http://something.com/register.php?email=$to&code=$auth_code \n\n";
 		$body .= "Many thanks,\n";
-		$body .= "- Straight-Street";
+		$body .= "- Something";
 
-		if (mb_send_mail($to, $subject, $body, "From: Straight-Street <support@straight-street.com>"))
+		if (mb_send_mail($to, $subject, $body, "From: support@something-street.com"))
         {
 			echo("1");
 		} else {

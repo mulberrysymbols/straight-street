@@ -1,5 +1,7 @@
 <?php
 
+require('_dbconsts.php');
+
 function random_str($length="8")
 {
 	$set = array("a","A","b","B","c","C","d","D","e","E","f","F","g","G","h","H","i","I","j","J","k","K","l","L","m","M","n","N","o","O","p","P","q","Q","r","R","s","S","t","T","u","U","v","V","w","W","x","X","y","Y","z","Z","1","2","3","4","5","6","7","8","9");
@@ -14,7 +16,7 @@ function random_str($length="8")
 
 function addForumUser($uname, $password, $email, $ip)
 {
-	if (!($link = mysql_connect('localhost','straight_street','ssmysqlpw') ))
+	if (!($link = mysql_connect('localhost',DB_USER,DB_PW) ))
 	{
 		throw new Exception("Unable to connect to the Database.");
 	}
