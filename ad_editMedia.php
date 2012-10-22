@@ -1,4 +1,4 @@
-Verb (complex)<?php
+<?php
 require('_header.php');
 
 print "</div></div>
