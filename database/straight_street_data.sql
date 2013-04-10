@@ -15786,7 +15786,7 @@ INSERT INTO `t_media_path` (`id`, `mid`, `type`, `filename`, `basename`) VALUES
 -- 
 
 -- INSERT INTO `t_media_path_backup` (`id`, `mid`, `type`, `filename`, `basename`) VALUES 
-
+(
 -- 
 -- Dumping data for table `t_media_path_old`
 -- 
@@ -23732,7 +23732,7 @@ INSERT INTO `t_media_wordlist` (`id`, `name`, `deleted`) VALUES
 -- 
 
 INSERT INTO `t_review` (`id`, `name`, `status`) VALUES 
-(1, 'Review 001', 3),
+(1, 'Review 001', 3)
 
 -- 
 -- Dumping data for table `t_review_dataset`
@@ -23897,20 +23897,20 @@ INSERT INTO `t_tag` (`id`, `tag`) VALUES
 -- 
 
 INSERT INTO `t_user` (`id`, `authcode`, `username`, `pass`, `datereg`, `auth`, `email`, `fname`, `sname`, `dob`, `role`, `last_access`, `language_id`, `cancontact`) VALUES 
-(1, '', 'Admin', '', '2008-01-30 00:00:00', 9, 'support@somehting.com', 'Garry', 'Paxton', '0000-00-00 00:00:00', 'Website Administrator', '2012-10-10 10:41:59', 'EN', 0x31),
+(1, '', 'Admin', '', '2008-01-30 00:00:00', 9, 'support@somehting.com', 'Garry', 'Paxton', '0000-00-00 00:00:00', 'Website Administrator', '2012-10-10 10:41:59', 'EN', 0x31);
 
 -- 
 -- Dumping data for table `t_user_agr_lic`
 -- 
 
 INSERT INTO `t_user_agr_lic` (`id`, `uid`, `lid`) VALUES 
-(1, 55, 6),
+(1, 55, 6);
 -- 
 -- Dumping data for table `t_user_authority`
 -- 
 
 INSERT INTO `t_user_authority` (`id`, `user_id`, `authority_id`) VALUES 
-(1, 1, 'A'),
+(1, 1, 'A');
 
 -- 
 -- Dumping data for table `t_web_app`
