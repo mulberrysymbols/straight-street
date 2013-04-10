@@ -15786,7 +15786,7 @@ INSERT INTO `t_media_path` (`id`, `mid`, `type`, `filename`, `basename`) VALUES
 -- 
 
 -- INSERT INTO `t_media_path_backup` (`id`, `mid`, `type`, `filename`, `basename`) VALUES 
-(
+
 -- 
 -- Dumping data for table `t_media_path_old`
 -- 
