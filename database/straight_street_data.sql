@@ -20,6 +20,8 @@
 -- Dumping data for table `t_app`
 -- 
 
+USE `straight_street`;
+
 INSERT INTO `t_app` (`id`, `name`, `brief`, `info`, `status`, `showfirst`, `features`, `sysreq`, `other`) VALUES 
 (15, 'PicBoard', 'Create Communication charts', 'Create Communication charts', 1, 0, 'Create Communication charts', 'Create Communication charts', 'Create Communication charts'),
 (16, 'PicMouse', 'xxx', 'xxx', 1, 0, 'xxx', 'xxx', 'xxx'),
@@ -23732,7 +23734,7 @@ INSERT INTO `t_media_wordlist` (`id`, `name`, `deleted`) VALUES
 -- 
 
 INSERT INTO `t_review` (`id`, `name`, `status`) VALUES 
-(1, 'Review 001', 3)
+(1, 'Review 001', 3);
 
 -- 
 -- Dumping data for table `t_review_dataset`
