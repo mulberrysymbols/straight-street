@@ -7,8 +7,8 @@ RewriteBase /
 #RewriteRule ^api/(.*)$ _api1/$1
 
 # make www.somehting.com go to something.com
-RewriteCond %{HTTP_HOST} ^www\.something\.com$ [NC]
-RewriteRule ^(.*)$ http://something.com/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} ^www\.something\.com$ [NC]
+#RewriteRule ^(.*)$ http://something.com/$1 [R=301,L]
 
 #AllowOverride Options
 php_flag magic_quotes_gpc off
@@ -20,7 +20,7 @@ php_value error_reporting 8191
 php_value date.timezone Europe/London
 
 #utf-8 support
-# see http://www.nicknettleton.com/zine/php/php-utf-8-cheatsheet
+#    see http://www.nicknettleton.com/zine/php/php-utf-8-cheatsheet
 php_value mbstring.language				Neutral
 php_value mbstring.internal_encoding		UTF-8
 php_value mbstring.encoding_translation 	On

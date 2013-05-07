@@ -63,6 +63,8 @@ function resetPage()
     document.getElementById('symbols').innerHTML = '';
 }
 
+var urlBase = undefined;
+
 function initPage()
 {
 	var args = getURLArgs(''+window.location);
@@ -74,6 +76,7 @@ function initPage()
     {
         getTag( args.tag );
     }
+    urlBase = 'http://'+window.location.hostname;
 }
 
 function submitForm()
@@ -139,7 +142,7 @@ function showSymbols(obj)
         {
             var i = document.createElement('object');
             i.type='image/svg+xml';
-            i.data='http://somehting.com/img/apitest.svg';
+            i.data=urlBase+'/img/apitest.svg';
             i.title = name;
         }
         catch (e)
@@ -154,7 +157,7 @@ function showSymbols(obj)
         try
         {
             var i = document.createElement('img');
-            i.src='http://somehting.com/img/apitest.wmf';
+            i.src=urlBase+'/img/apitest.wmf';
             i.width=0;
             i.height=0;
             document.appendChild(i);
@@ -290,7 +293,7 @@ function getTag( tag, page )
     theForm.find.value = tag;
 	    
     var url = '/api/tag/EN/'+tag+'?page='+page+'&appid=SSApiTest';
-    requestJSON('http://somehting.com'+url+'&callback=showTag');
+    requestJSON(urlBase+url+'&callback=showTag');
 }
 
 function getSymbols( find, page )
@@ -298,7 +301,7 @@ function getSymbols( find, page )
     page = page || 0;
     var theForm = document.getElementById('the_form');
     theForm.find.value = find;
-    var url = 'http://somehting.com/api/symbols/EN/'+find+'?page='+page+'&appid=SSApiTest';
+    var url = urlBase+'/api/symbols/EN/'+find+'?page='+page+'&appid=SSApiTest';
     requestJSON(url+'&callback=showSymbols');
 /*     var xhrObj = new XMLHttpRequest();
         function xhrHandler()
@@ -315,4 +318,5 @@ function getSymbols( find, page )
 */
 }
 
-window.onload=initPage;
+window.onload=initPage; // weird, this doesn't work, at least in Chrome
+window.onload=function(){initPage();};

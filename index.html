@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Mulberry Symbols, web app and API VM Image</title>
+</head>
+<body>
+	<header>Mulberry Symbols, web app and API VM Image</header>
+	<nav>
+	</nav>
+	<main>
+		<article>
+			<h1>A few notes on this VMDepot image </h1>
+			<p>This Mulberry Symbols <a href="http://vmdepot.msopentech.com/Vhd/Show?vhdId=298&version=312">VM image from VMDepot</a> for <a href="http://www.windowsazure.com/">Windows Azure</a> provides a set of symbols designed primarily for Augmentative and Alternative Communication (AAC). These are used to supplement or replace speech or writing. This image contains both the SVG scalable symbols (along with PNG and WMF versions) and with a web app for managing and accessing the symbols. It also provides a RESTful API for programmatic access and mashups. Many symbols are designed for use by those older than children and are unique to the Mulberry symbols. They are also useful as clipart.
+            </p>
+            <p>
+            The source code and related configuration information can be found in the <a href="https://code.google.com/p/straight-street">straight-street google code project</a> and the API in the <a href="https://code.google.com/p/straight-street">straight-street API project</a>. Use 'svn update' in '/var/www/' and '/var/www/api' to get the latest. 
+            </p>
+            <p>
+            A number of users have been created and given access to '/var/www' and the mysql databases. This means the system will be up and running whatever root user is created when the image is instantiated on Azure. The users / passwords are:
+            <ul>
+                <li>Admin: mulbadmin / Mulb3rry (is a su user and in group www-admin)</li>
+                <li>MySQL root: root / mysqlpw</li>
+                <li>MySQL access to 'mulberry' database: mulberry / Mulberry (also used from PHP)</li>
+            </ul>
+            <strong>These passwords should be reset ASAP as this information is public.</strong>
+            </p>
+            <h2>How to run the Web App</h2>
+            <p>
+            To access the web app home page simply rename or delete this file (/var/www/index.html) so that index.php is served.
+            </p>
+		</article>
+		<aside>
+            <p>
+            The symbols and application were funded and created by the Straight-Street UK charity. The charity has closed due to lack of funding, with 1000-odd further symbols being partially completed. Anyone interested in continuing the work or otherwise contributing can get in contact via the mailing list given on the project pages.
+            </p>
+		</aside>
+	</main>
+	<footer>Copyright Steve Lee 2013 (OpenDirective - <a href='http://opendirective.com'>http://opendirective.com</a>)</footer>
+</body>
+</html>
